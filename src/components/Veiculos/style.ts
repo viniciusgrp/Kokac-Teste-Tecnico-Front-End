@@ -15,7 +15,7 @@ export const VeiculoStyle = styled.div`
         flex-direction: column;
         gap: 16px;
         align-items: center;
-        background-color: #ffffd7;
+        background-color: var(--color-primary);
         max-width: 450px;
 
         form {
@@ -51,7 +51,7 @@ export const VeiculoStyle = styled.div`
             }
 
             button {
-                background-color: #0000ff;
+                background-color: var(--color-secundary); 
                 color: white;
                 padding: 15px;
             }
@@ -62,7 +62,7 @@ export const VeiculoStyle = styled.div`
         width: 90%;
         max-width: 700px;
         margin: 30px auto;
-        background-color: #ffffd7;
+        background-color: var(--color-primary);
         border-radius: 8px;
         border: 1px solid gray;
         padding: 24px;

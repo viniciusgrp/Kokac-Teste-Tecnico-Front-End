@@ -11,7 +11,7 @@ export const CepStyle = styled.div`
     text-align: center;
     width: 90%;
     max-width: 300px;
-    background-color: #ffffd7;
+    background-color: var(--color-primary);
     border: 1px solid gray;
     display: flex;
     flex-direction: column;
@@ -36,7 +36,7 @@ export const CepStyle = styled.div`
         }
 
         button {
-            background-color: #0000ff;
+            background-color: var(--color-secundary); 
             color: white;
             height: 32px;
             border-radius: 8px;
@@ -52,7 +52,7 @@ export const CepStyle = styled.div`
     
     ul {
         list-style: none;
-        background-color: #ffffd7;
+        background-color: var(--color-primary);
         border-radius: 10px;
         width: 90%;
         max-width: 900px;

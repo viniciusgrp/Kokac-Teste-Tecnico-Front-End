@@ -11,4 +11,9 @@ export const Global = createGlobalStyle`
     button {
         cursor: pointer;
     }
+
+    :root {
+        --color-primary:  #ffffd7;
+        --color-secundary: #0000ff;
+    }
 `

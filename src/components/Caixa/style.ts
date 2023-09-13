@@ -10,7 +10,7 @@ export const CaixaStyle = styled.div`
     align-items: center;
     margin: 16px auto;
     width: 90%;
-    background-color: #ffffd7;
+    background-color: var(--color-primary);
     border-radius: 10px;
     padding: 20px;
     border: 1px solid gray;
@@ -29,7 +29,7 @@ export const CaixaStyle = styled.div`
       }
 
       button {
-        background-color: #0000ff;
+        background-color: var(--color-secundary);
         color: white;
         width: 100%;
         padding: 10px;
@@ -42,7 +42,7 @@ export const CaixaStyle = styled.div`
 
   .troco {
     padding: 8px;
-    background-color: #ffffd7;
+    background-color: var(--color-primary);
     border-radius: 8px;
     display: flex;
     gap: 16px;
@@ -67,7 +67,7 @@ export const CaixaStyle = styled.div`
           left: 10px;
           padding: 7px 13px;
           position: absolute;
-          background-color: #0000ff;
+          background-color: var(--color-secundary);
           color: white;
         }
       }
