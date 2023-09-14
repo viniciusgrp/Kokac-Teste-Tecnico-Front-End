@@ -10,7 +10,7 @@ display: none;
     background-color: black;
     color: white;
     width: 100%;
-    padding: 16px;
+    padding: 5px 16px;
     justify-content: space-around;
 
     .redesSociais {
