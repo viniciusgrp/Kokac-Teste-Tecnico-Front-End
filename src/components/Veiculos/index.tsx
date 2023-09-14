@@ -8,20 +8,6 @@ import { TbMotorbike } from "react-icons/tb";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
-const schema = yup
-  .object({
-    modelo: yup.string().required("Modelo é um campo obrigatório"),
-    marca: yup.string().required("Marca é um campo obrigatório"),
-    anoFabricacao: yup
-      .number()
-      .positive()
-      .min(1900, "Insira um valor a partir de 1900")
-      .required("Ano de fabricação é um campo obrigatório"),
-    quantidadePortas: yup.number().positive(),
-    passageiros: yup.number().positive(),
-  })
-  .required();
-
 interface IInputs {
   tipo: string;
   marca: string;
@@ -36,9 +22,7 @@ export const Veiculos = () => {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<IInputs>({
-    resolver: yupResolver(schema),
-  });
+  } = useForm<IInputs>()
 
   const [tipo, setTipo] = useState("");
   const [veiculos, setVeiculos] = useState<IVeiculo[]>([]);
@@ -53,6 +37,7 @@ export const Veiculos = () => {
   };
 
   const onSubmit = async (body: IInputs) => {
+    console.log(body)
     try {
       const { data } = await api.post("/veiculos", body);
       console.log(data);

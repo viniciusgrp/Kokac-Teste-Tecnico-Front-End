@@ -13,6 +13,7 @@
     "@hookform/resolvers": "^3.3.1",
     "@types/axios": "^0.14.0",
     "@types/styled-components": "^5.1.27",
+    "@types/yup": "^0.32.0",
     "axios": "^1.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
