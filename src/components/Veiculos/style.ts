@@ -17,6 +17,7 @@ export const VeiculoStyle = styled.div`
         align-items: center;
         background-color: var(--color-primary);
         max-width: 450px;
+        margin-bottom: 30px;
 
         form {
             display: flex;

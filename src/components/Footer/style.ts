@@ -10,8 +10,9 @@ display: none;
     background-color: black;
     color: white;
     width: 100%;
-    padding: 5px 16px;
+    padding: 0px 16px;
     justify-content: space-around;
+    font-size: 14px;
 
     .redesSociais {
       display: flex;
